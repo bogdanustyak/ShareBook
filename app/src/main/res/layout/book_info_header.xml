@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="10dp"
+    android:orientation="vertical">
+
+    <ImageView
+        android:id="@+id/ivBookCover"
+        android:transitionName="bookCover"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:src="@mipmap/harry_potter_cover5" />
+
+    <TextView
+        android:id="@+id/tvBookTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/ivBookCover"
+        android:layout_toEndOf="@+id/ivBookCover"
+        android:layout_marginStart="10dp"
+        android:layout_marginLeft="10dp"
+        style="@style/BookTitle"
+        android:text="Book title"/>
+
+    <Space
+        android:id="@+id/spacer"
+        android:layout_width="wrap_content"
+        android:layout_height="20dp"
+        android:layout_below="@+id/tvBookTitle"/>
+    
+   <include
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+       android:layout_toEndOf="@+id/ivBookCover"
+       android:layout_toRightOf="@+id/ivBookCover"
+       android:layout_below="@+id/spacer"
+       layout="@layout/item_author"/>
+
+</RelativeLayout>

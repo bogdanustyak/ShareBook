@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <android.support.v7.widget.CardView
+        android:id="@+id/card_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:focusable="true"
+        android:clickable="true"
+        android:foreground="?android:attr/selectableItemBackground"
+        android:layout_margin="8dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:gravity="center">
+
+            <ImageView
+                android:id="@+id/ivBookCover"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="10dp"
+                android:src="@mipmap/harry_potter_cover5" />
+
+            <TextView
+                android:id="@+id/tvBookName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_alignTop="@+id/ivBookCover"
+                android:layout_marginLeft="5dp"
+                android:layout_toEndOf="@+id/ivBookCover"
+                android:layout_toRightOf="@+id/ivBookCover"
+                android:padding="5dp"
+                android:text="Harry Potter and the Orden of the Phoenix"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/tvBookAuthor"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tvBookName"
+                android:layout_marginLeft="5dp"
+                android:layout_toEndOf="@+id/ivBookCover"
+                android:layout_toRightOf="@+id/ivBookCover"
+                android:text="J.K. Rowling" />
+
+            <TextView
+                android:id="@+id/tvWantThisBook"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tvAdress"
+                android:layout_centerHorizontal="true"
+                android:layout_margin="5dp"
+                android:layout_toEndOf="@+id/ivBookCover"
+                android:layout_toRightOf="@+id/ivBookCover"
+                android:background="?attr/colorPrimary"
+                android:paddingBottom="5dp"
+                android:paddingLeft="20dp"
+                android:paddingRight="20dp"
+                android:paddingTop="5dp"
+                android:text="WANT THIS BOOK"
+                android:textColor="@android:color/white"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/tvAdress"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tvBookAuthor"
+                android:layout_marginLeft="5dp"
+                android:layout_toEndOf="@+id/ivBookCover"
+                android:layout_toRightOf="@+id/ivBookCover"
+                android:text="Lviv" />
+
+        </RelativeLayout>
+
+    </android.support.v7.widget.CardView>
+
+</LinearLayout>
